@@ -1,0 +1,2 @@
+baseurl: /css-variables
+exclude: ['README.md']

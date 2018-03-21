@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base: #21c8ac;
+  --spacing: 10px;
+  --blur: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+input,
+label {
+  width: 100px;
+}
+
+label {
+  text-align: left;
+}
+
+img {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+  width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  img {
+    width: 100%;
+  }
+}
